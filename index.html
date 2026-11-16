@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>floweryify</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>floweryify</h1>
+      </header>
+
+      <div class="controls">
+        <label class="field">
+          <span>your image</span>
+          <input id="sourceInput" type="file" accept="image/*" />
+        </label>
+
+        <label class="field">
+          <span>your image but floweryify'd</span>
+          <input id="targetInput" type="file" accept="image/*" />
+        </label>
+
+        <label class="field range-field" for="preserveRange">
+          <span>Preserve original layout</span>
+          <output id="preserveOutput">35%</output>
+        </label>
+        <input id="preserveRange" type="range" min="0" max="100" value="35" />
+
+        <button id="runButton" type="button" disabled>Apply flower reference</button>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="resultCanvas" width="768" height="768"></canvas>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
