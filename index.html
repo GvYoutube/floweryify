@@ -14,26 +14,18 @@
 
       <div class="controls">
         <label class="field">
-          <span>your image</span>
+          <span>upload an image</span>
           <input id="sourceInput" type="file" accept="image/*" />
         </label>
 
-        <label class="field">
-          <span>your image but floweryify'd</span>
-          <input id="targetInput" type="file" accept="image/*" />
-        </label>
-
-        <label class="field range-field" for="preserveRange">
-          <span>Preserve original layout</span>
-          <output id="preserveOutput">35%</output>
-        </label>
         <input id="preserveRange" type="range" min="0" max="100" value="35" />
 
-        <button id="runButton" type="button" disabled>Apply flower reference</button>
+        <button id="runButton" type="button" disabled>floweryify the image</button>
       </div>
 
       <div class="canvas-wrap">
-        <canvas id="resultCanvas" width="768" height="768"></canvas>
+        <h2>note that your image will be fit within the flowery image's width and height that was used. your image may be streched or compressed.</h2>
+        <canvas id="resultCanvas" width="212" height="228"></canvas>
       </div>
     </div>
 
